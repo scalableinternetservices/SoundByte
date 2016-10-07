@@ -14,6 +14,7 @@
 ActiveRecord::Schema.define(version: 20161007214334) do
 
   create_table "users", force: :cascade do |t|
+    # devise
     t.string   "email",                  default: "", null: false
     t.string   "encrypted_password",     default: "", null: false
     t.string   "reset_password_token"
@@ -26,6 +27,11 @@ ActiveRecord::Schema.define(version: 20161007214334) do
     t.string   "last_sign_in_ip"
     t.datetime "created_at",                          null: false
     t.datetime "updated_at",                          null: false
+    
+    # other
+    t.string  "username",                             null: false, unique: true
+    t.string  "first_name",                           null: false
+    t.string  "last_name",                            null: false
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true
