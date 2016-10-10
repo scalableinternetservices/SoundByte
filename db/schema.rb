@@ -14,9 +14,9 @@
 ActiveRecord::Schema.define(version: 20161007221448) do
 
   create_table "sound_bytes", force: :cascade do |t|
-    t.integer  "sbid"
+    t.integer  "sb_id"
     t.string   "mp3_file"
-    t.string   "acctid"
+    t.string   "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
