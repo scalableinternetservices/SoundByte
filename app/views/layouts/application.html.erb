@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Workspace</title>
+  <title>Soundbyte</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <div id="logo">
+    <h1 style="text-align: center">Soundbyte</h1>
+    <%=image_tag("logo.png", alt: "Example Image", width: "50px")%>
+  </div>
 
 <%= yield %>
 
