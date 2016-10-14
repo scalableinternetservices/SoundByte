@@ -1,27 +1,29 @@
 # CS188
-Repository for CS 188: Scalable Internet Service
-=======
 
-     ,-----.,--.                  ,--. ,---.   ,--.,------.  ,------.
-    '  .--./|  | ,---. ,--.,--. ,-|  || o   \  |  ||  .-.  \ |  .---'
-    |  |    |  || .-. ||  ||  |' .-. |`..'  |  |  ||  |  \  :|  `--, 
-    '  '--'\|  |' '-' ''  ''  '\ `-' | .'  /   |  ||  '--'  /|  `---.
-     `-----'`--' `---'  `----'  `---'  `--'    `--'`-------' `------'
-    ----------------------------------------------------------------- 
+## Project Name
+Soundbyte :musical_note:
 
+## Project Description
+A web application that allows users to upload any audiofiles + follow other users' uploaded audiofiles. In addition to music, this will allow anyone the opportunity to create their own online podcast.
 
-Welcome to your Rails project on Cloud9 IDE!
+## Team Members
 
-To get started, just do the following:
+#### Frank Chen
+![alt text](https://github.com/scalableinternetservices/SoundByte/blob/signup-login-ui/app/assets/images/frank.png "Frank Chen")
 
-1. Run the project with the "Run Project" button in the menu bar on top of the IDE.
-2. Preview your new app by clicking on the URL that appears in the Run panel below (https://cs-188-project-official-darthpwner.c9users.io/).
+Github Username: [`kfrankc`](https://github.com/kfrankc)
 
-Happy coding!
-The Cloud9 IDE team
+#### Matthew Lin
+![alt text](https://github.com/scalableinternetservices/SoundByte/blob/signup-login-ui/app/assets/images/matthew.png "Matthew Lin")
 
+Github Username: [`Darthpwner`](https://github.com/Darthpwner)
 
-## Support & Documentation
+#### Anthony Lai
+![alt text](https://github.com/scalableinternetservices/SoundByte/blob/signup-login-ui/app/assets/images/anthony.png "Anthony Lai")
 
-Visit http://docs.c9.io for support, or to learn more about using Cloud9 IDE. 
-To watch some training videos, visit http://www.youtube.com/user/c9ide
+Github Username: [`theAnthonyLai`](https://github.com/theAnthonyLai)
+
+### Caleb Mayerski
+![alt text](https://github.com/scalableinternetservices/SoundByte/blob/signup-login-ui/app/assets/images/caleb.png "Caleb Mayerski")
+
+Github Username: [`CalebGM`](https://github.com/CalebGM)
