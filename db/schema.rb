@@ -11,7 +11,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161007214334) do
+ActiveRecord::Schema.define(version: 20161010060310) do
+
+  create_table "sound_bytes", force: :cascade do |t|
+    t.integer  "sb_id"
+    t.string   "mp3_file"
+    t.string   "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
@@ -26,6 +34,10 @@ ActiveRecord::Schema.define(version: 20161007214334) do
     t.string   "last_sign_in_ip"
     t.datetime "created_at",                          null: false
     t.datetime "updated_at",                          null: false
+    t.string   "first_name"
+    t.string   "last_name"
+    t.string   "username"
+    t.string   "user_id"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true
