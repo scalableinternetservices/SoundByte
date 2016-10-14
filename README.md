@@ -14,7 +14,7 @@ A web application that allows users to upload any audiofiles + follow other user
 Github Username: [`kfrankc`](https://github.com/kfrankc)
 
 #### Matthew Lin
-![alt text](https://github.com/scalableinternetservices/SoundByte/blob/signup-login-ui/app/assets/images/matthew.jpg "Matthew Lin")
+![alt text](https://github.com/scalableinternetservices/SoundByte/blob/signup-login-ui/app/assets/images/matthew.JPG "Matthew Lin")
 
 Github Username: [`Darthpwner`](https://github.com/Darthpwner)
 
