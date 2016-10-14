@@ -1,27 +1,25 @@
 # CS188
-Repository for CS 188: Scalable Internet Service
-=======
 
-     ,-----.,--.                  ,--. ,---.   ,--.,------.  ,------.
-    '  .--./|  | ,---. ,--.,--. ,-|  || o   \  |  ||  .-.  \ |  .---'
-    |  |    |  || .-. ||  ||  |' .-. |`..'  |  |  ||  |  \  :|  `--, 
-    '  '--'\|  |' '-' ''  ''  '\ `-' | .'  /   |  ||  '--'  /|  `---.
-     `-----'`--' `---'  `----'  `---'  `--'    `--'`-------' `------'
-    ----------------------------------------------------------------- 
+## Project Name
+Soundbyte :musical_note:
 
+## Project Description
+A web application that allows users to upload any audiofiles + follow other users' uploaded audiofiles. In addition to music, this will allow anyone the opportunity to create their own online podcast.
 
-Welcome to your Rails project on Cloud9 IDE!
+## Team Members
 
-To get started, just do the following:
+#### Frank Chen
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Frank Chen")
+Github Username: [`kfrankc`](https://github.com/kfrankc)
 
-1. Run the project with the "Run Project" button in the menu bar on top of the IDE.
-2. Preview your new app by clicking on the URL that appears in the Run panel below (https://cs-188-project-official-darthpwner.c9users.io/).
+#### Matthew Lin
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Matthew Lin")
+Github Username: [`Darthpwner`](https://github.com/Darthpwner)
 
-Happy coding!
-The Cloud9 IDE team
+#### Anthony Lai
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Anthony Lai")
+Github Username: [`theAnthonyLai`](https://github.com/theAnthonyLai)
 
-
-## Support & Documentation
-
-Visit http://docs.c9.io for support, or to learn more about using Cloud9 IDE. 
-To watch some training videos, visit http://www.youtube.com/user/c9ide
+### Caleb Mayerski
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Caleb Mayerski")
+Github Username: [`CalebGM`](https://github.com/CalebGM)
