@@ -31,5 +31,19 @@ h1 {
 .jumbotron {
   background-image: asset-url('coverphoto.jpg');
   background-size: cover;
-  height: 550px;
+  height: 700px;
+}
+
+.signup-container {
+    width: 400px;
+    background-color: #7CD39D;
+    margin: auto;
+    padding: 10px;
+}
+
+.create_button {
+    margin: auto;
+    width: 100px;
+    padding-bottom: 10px;
+    
 }
