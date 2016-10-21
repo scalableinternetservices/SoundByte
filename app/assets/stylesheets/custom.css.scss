@@ -6,6 +6,11 @@ h1 {
     font-weight: 100;
 }
 
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+}
+
 #logo {
     text-align: center;
 }
@@ -32,4 +37,16 @@ h1 {
   background-image: asset-url('coverphoto.jpg');
   background-size: cover;
   height: 550px;
+}
+
+.container {
+    width: 400px;
+    background-color: #7CD39D;
+}
+a {
+    color: black;
+}
+a:hover {
+    color: #299E55;
+    text-decoration: none;
 }
