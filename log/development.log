@@ -9320,3 +9320,362 @@ Cannot render console from 169.232.85.144! Allowed networks: 127.0.0.1, ::1, 127
 
 Started GET "/assets/coverphoto-0a47290ceb18cfe538faca747e0cceac5394e8eb449663afef90ea967556e595.jpg" for 169.232.85.144 at 2016-10-28 03:40:44 +0000
 Cannot render console from 169.232.85.144! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 169.232.85.144 at 2016-10-28 03:41:55 +0000
+Cannot render console from 169.232.85.144! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 3]]
+  Rendered pages/home.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 206ms (Views: 203.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/custom.self-5ec366c5ccc1ed8bdd9d8acc92e86493a1b63c3e1324b532ef3a8b5f465b698c.css?body=1" for 169.232.85.144 at 2016-10-28 03:41:55 +0000
+Cannot render console from 169.232.85.144! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/login.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 169.232.85.144 at 2016-10-28 03:41:55 +0000
+Cannot render console from 169.232.85.144! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 169.232.85.144 at 2016-10-28 03:41:55 +0000
+Cannot render console from 169.232.85.144! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 169.232.85.144 at 2016-10-28 03:41:55 +0000
+Cannot render console from 169.232.85.144! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 169.232.85.144 at 2016-10-28 03:41:55 +0000
+Cannot render console from 169.232.85.144! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/signup.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 169.232.85.144 at 2016-10-28 03:41:55 +0000
+Cannot render console from 169.232.85.144! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/button.self-126ac9bf0e7f2d8568f8da3a00fd5f0fac6eae0946331003370161fbf8d7975e.js?body=1" for 169.232.85.144 at 2016-10-28 03:41:55 +0000
+Cannot render console from 169.232.85.144! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/dropdown.self-561cca1cbaf67474e01e9536f106bad541594860a6df997004591c1c1957a147.js?body=1" for 169.232.85.144 at 2016-10-28 03:41:55 +0000
+Cannot render console from 169.232.85.144! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/transition.self-6ad2488465135ab731a045a8ebbe3ea2fc501aed286042496eda1664fdd07ba9.js?body=1" for 169.232.85.144 at 2016-10-28 03:41:55 +0000
+Cannot render console from 169.232.85.144! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/alert.self-742145c5bb847aafdadc6e339be795628f8bc25f177e851f03a8c42278eb0312.js?body=1" for 169.232.85.144 at 2016-10-28 03:41:55 +0000
+Cannot render console from 169.232.85.144! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/carousel.self-e47323f363ceb3dc0bdbce05e36e709ed428e339833a41140a85cb0af24b8127.js?body=1" for 169.232.85.144 at 2016-10-28 03:41:55 +0000
+Cannot render console from 169.232.85.144! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/collapse.self-2eb697f62b587bb786ff940d82dd4be88cdeeaf13ca128e3da3850c5fcaec301.js?body=1" for 169.232.85.144 at 2016-10-28 03:41:55 +0000
+Cannot render console from 169.232.85.144! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/modal.self-3e78617ade5663314b7ee0ea10375a5b34d59ffbade44939e3f2a4e4ef2019b3.js?body=1" for 169.232.85.144 at 2016-10-28 03:41:55 +0000
+Cannot render console from 169.232.85.144! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/tab.self-5bf7078b682f8b131332eefa46b45fa5eff2eca745fc0d03e2991450888f7c28.js?body=1" for 169.232.85.144 at 2016-10-28 03:41:55 +0000
+Cannot render console from 169.232.85.144! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/affix.self-6d6f1a7fc5c8aabf3547fa1b794fab6268f54bc55ad815e55873c71f52513517.js?body=1" for 169.232.85.144 at 2016-10-28 03:41:55 +0000
+Cannot render console from 169.232.85.144! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/scrollspy.self-969f3c5f48cdf1e439c7fa1154c13b948715f5c689f87837c0b64521d3b46ef6.js?body=1" for 169.232.85.144 at 2016-10-28 03:41:55 +0000
+Cannot render console from 169.232.85.144! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/tooltip.self-05afb177e08f98997ccfc84fa08a215e4b27d48d5fe4d049080675e9dffd8199.js?body=1" for 169.232.85.144 at 2016-10-28 03:41:55 +0000
+Cannot render console from 169.232.85.144! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/popover.self-0aa93860b59fe7393f1dd490f54b3cb994f9d6155adffce034d4e14ae361b041.js?body=1" for 169.232.85.144 at 2016-10-28 03:41:55 +0000
+Cannot render console from 169.232.85.144! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 169.232.85.144 at 2016-10-28 03:41:55 +0000
+Cannot render console from 169.232.85.144! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 169.232.85.144 at 2016-10-28 03:41:55 +0000
+Cannot render console from 169.232.85.144! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/imageloader.self-3845dc406e2aede99a4bc792f683b6541e4a37bd6b037652cd3e7d2e815c0c96.js?body=1" for 169.232.85.144 at 2016-10-28 03:41:55 +0000
+Cannot render console from 169.232.85.144! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/login.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 169.232.85.144 at 2016-10-28 03:41:55 +0000
+Cannot render console from 169.232.85.144! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/signup.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 169.232.85.144 at 2016-10-28 03:41:55 +0000
+Cannot render console from 169.232.85.144! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 169.232.85.144 at 2016-10-28 03:41:55 +0000
+Cannot render console from 169.232.85.144! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/logo-013d76c5ad51130d5a87e99e6a7b1d8b4927e53cedce6dcecf2beaee98a09cc7.png" for 169.232.85.144 at 2016-10-28 03:41:56 +0000
+Cannot render console from 169.232.85.144! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/coverphoto-0a47290ceb18cfe538faca747e0cceac5394e8eb449663afef90ea967556e595.jpg" for 169.232.85.144 at 2016-10-28 03:41:56 +0000
+Cannot render console from 169.232.85.144! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/users/sign_up" for 169.232.85.144 at 2016-10-28 03:41:59 +0000
+Cannot render console from 169.232.85.144! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+Redirected to https://soundbyte-kfrankc.c9users.io/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 169.232.85.144 at 2016-10-28 03:41:59 +0000
+Cannot render console from 169.232.85.144! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 3]]
+  Rendered pages/home.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 64ms (Views: 61.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/sign_up" for 169.232.85.144 at 2016-10-28 03:42:01 +0000
+Cannot render console from 169.232.85.144! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+Redirected to https://soundbyte-kfrankc.c9users.io/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 169.232.85.144 at 2016-10-28 03:42:01 +0000
+Cannot render console from 169.232.85.144! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 3]]
+  Rendered pages/home.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 58ms (Views: 55.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/sign_in" for 169.232.85.144 at 2016-10-28 03:42:02 +0000
+Cannot render console from 169.232.85.144! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+Redirected to https://soundbyte-kfrankc.c9users.io/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 169.232.85.144 at 2016-10-28 03:42:02 +0000
+Cannot render console from 169.232.85.144! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 3]]
+  Rendered pages/home.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 68ms (Views: 65.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 169.232.85.144 at 2016-10-28 03:42:06 +0000
+Cannot render console from 169.232.85.144! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+  Rendered pages/home.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 47ms (Views: 45.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/sign_up" for 169.232.85.144 at 2016-10-28 03:42:19 +0000
+Cannot render console from 169.232.85.144! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 3]]
+Redirected to https://soundbyte-kfrankc.c9users.io/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 169.232.85.144 at 2016-10-28 03:42:19 +0000
+Cannot render console from 169.232.85.144! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+  Rendered pages/home.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 44ms (Views: 42.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/sign_up" for 169.232.85.144 at 2016-10-28 03:42:19 +0000
+Cannot render console from 169.232.85.144! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 3]]
+Redirected to https://soundbyte-kfrankc.c9users.io/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 169.232.85.144 at 2016-10-28 03:42:19 +0000
+Cannot render console from 169.232.85.144! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+  Rendered pages/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 49ms (Views: 47.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/sign_up" for 169.232.85.144 at 2016-10-28 03:42:20 +0000
+Cannot render console from 169.232.85.144! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 3]]
+Redirected to https://soundbyte-kfrankc.c9users.io/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 169.232.85.144 at 2016-10-28 03:42:20 +0000
+Cannot render console from 169.232.85.144! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+  Rendered pages/home.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 62ms (Views: 60.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/sign_in" for 169.232.85.144 at 2016-10-28 03:42:21 +0000
+Cannot render console from 169.232.85.144! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 3]]
+Redirected to https://soundbyte-kfrankc.c9users.io/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 169.232.85.144 at 2016-10-28 03:42:22 +0000
+Cannot render console from 169.232.85.144! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+  Rendered pages/home.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 55ms (Views: 52.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 169.232.85.144 at 2016-10-28 03:42:28 +0000
+Cannot render console from 169.232.85.144! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 3]]
+  Rendered pages/home.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 104ms (Views: 102.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 169.232.85.144 at 2016-10-28 03:43:12 +0000
+Cannot render console from 169.232.85.144! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+  Rendered pages/home.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 52ms (Views: 50.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/custom.self-5ec366c5ccc1ed8bdd9d8acc92e86493a1b63c3e1324b532ef3a8b5f465b698c.css?body=1" for 169.232.85.144 at 2016-10-28 03:43:12 +0000
+Cannot render console from 169.232.85.144! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 169.232.85.144 at 2016-10-28 03:43:12 +0000
+Cannot render console from 169.232.85.144! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/signup.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 169.232.85.144 at 2016-10-28 03:43:12 +0000
+Cannot render console from 169.232.85.144! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/login.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 169.232.85.144 at 2016-10-28 03:43:12 +0000
+Cannot render console from 169.232.85.144! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 169.232.85.144 at 2016-10-28 03:43:12 +0000
+Cannot render console from 169.232.85.144! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 169.232.85.144 at 2016-10-28 03:43:12 +0000
+Cannot render console from 169.232.85.144! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/transition.self-6ad2488465135ab731a045a8ebbe3ea2fc501aed286042496eda1664fdd07ba9.js?body=1" for 169.232.85.144 at 2016-10-28 03:43:12 +0000
+Cannot render console from 169.232.85.144! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/alert.self-742145c5bb847aafdadc6e339be795628f8bc25f177e851f03a8c42278eb0312.js?body=1" for 169.232.85.144 at 2016-10-28 03:43:12 +0000
+Cannot render console from 169.232.85.144! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/button.self-126ac9bf0e7f2d8568f8da3a00fd5f0fac6eae0946331003370161fbf8d7975e.js?body=1" for 169.232.85.144 at 2016-10-28 03:43:12 +0000
+Cannot render console from 169.232.85.144! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/carousel.self-e47323f363ceb3dc0bdbce05e36e709ed428e339833a41140a85cb0af24b8127.js?body=1" for 169.232.85.144 at 2016-10-28 03:43:12 +0000
+Cannot render console from 169.232.85.144! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/collapse.self-2eb697f62b587bb786ff940d82dd4be88cdeeaf13ca128e3da3850c5fcaec301.js?body=1" for 169.232.85.144 at 2016-10-28 03:43:12 +0000
+Cannot render console from 169.232.85.144! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/dropdown.self-561cca1cbaf67474e01e9536f106bad541594860a6df997004591c1c1957a147.js?body=1" for 169.232.85.144 at 2016-10-28 03:43:12 +0000
+Cannot render console from 169.232.85.144! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/modal.self-3e78617ade5663314b7ee0ea10375a5b34d59ffbade44939e3f2a4e4ef2019b3.js?body=1" for 169.232.85.144 at 2016-10-28 03:43:12 +0000
+Cannot render console from 169.232.85.144! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/tab.self-5bf7078b682f8b131332eefa46b45fa5eff2eca745fc0d03e2991450888f7c28.js?body=1" for 169.232.85.144 at 2016-10-28 03:43:12 +0000
+Cannot render console from 169.232.85.144! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/affix.self-6d6f1a7fc5c8aabf3547fa1b794fab6268f54bc55ad815e55873c71f52513517.js?body=1" for 169.232.85.144 at 2016-10-28 03:43:13 +0000
+Cannot render console from 169.232.85.144! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/scrollspy.self-969f3c5f48cdf1e439c7fa1154c13b948715f5c689f87837c0b64521d3b46ef6.js?body=1" for 169.232.85.144 at 2016-10-28 03:43:13 +0000
+Cannot render console from 169.232.85.144! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/tooltip.self-05afb177e08f98997ccfc84fa08a215e4b27d48d5fe4d049080675e9dffd8199.js?body=1" for 169.232.85.144 at 2016-10-28 03:43:13 +0000
+Cannot render console from 169.232.85.144! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/popover.self-0aa93860b59fe7393f1dd490f54b3cb994f9d6155adffce034d4e14ae361b041.js?body=1" for 169.232.85.144 at 2016-10-28 03:43:13 +0000
+Cannot render console from 169.232.85.144! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 169.232.85.144 at 2016-10-28 03:43:13 +0000
+Cannot render console from 169.232.85.144! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 169.232.85.144 at 2016-10-28 03:43:13 +0000
+Cannot render console from 169.232.85.144! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/imageloader.self-3845dc406e2aede99a4bc792f683b6541e4a37bd6b037652cd3e7d2e815c0c96.js?body=1" for 169.232.85.144 at 2016-10-28 03:43:13 +0000
+Cannot render console from 169.232.85.144! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/login.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 169.232.85.144 at 2016-10-28 03:43:13 +0000
+Cannot render console from 169.232.85.144! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/signup.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 169.232.85.144 at 2016-10-28 03:43:13 +0000
+Cannot render console from 169.232.85.144! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 169.232.85.144 at 2016-10-28 03:43:13 +0000
+Cannot render console from 169.232.85.144! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/logo-013d76c5ad51130d5a87e99e6a7b1d8b4927e53cedce6dcecf2beaee98a09cc7.png" for 169.232.85.144 at 2016-10-28 03:43:13 +0000
+Cannot render console from 169.232.85.144! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/coverphoto-0a47290ceb18cfe538faca747e0cceac5394e8eb449663afef90ea967556e595.jpg" for 169.232.85.144 at 2016-10-28 03:43:13 +0000
+Cannot render console from 169.232.85.144! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
