@@ -10275,3 +10275,27 @@ Migrating to AddAttachmentMpegToSoundBytes (20161028221121)
             FROM sqlite_temp_master
             WHERE name='index_users_on_email' AND type='index'
 [0m
+
+
+Started GET "/" for 169.232.212.173 at 2016-10-28 22:19:57 +0000
+Cannot render console from 169.232.212.173! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 312ms (Views: 290.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 169.232.212.173 at 2016-10-28 22:19:59 +0000
+Cannot render console from 169.232.212.173! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (6.1ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (78.5ms)
+Completed 200 OK in 149ms (Views: 135.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/sign_in" for 169.232.212.173 at 2016-10-28 22:20:02 +0000
+Cannot render console from 169.232.212.173! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (7.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (20.2ms)
+Completed 200 OK in 114ms (Views: 112.0ms | ActiveRecord: 0.0ms)
