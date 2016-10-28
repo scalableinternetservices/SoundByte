@@ -40,6 +40,19 @@ body {
   height: 550px;
 }
 
+.signup-container {
+    width: 400px;
+    background-color: #7CD39D;
+    margin: auto;
+    padding: 10px;
+}
+
+.create_button {
+    margin: auto;
+    width: 100px;
+    padding-bottom: 10px;
+}
+
 .login-container {
     width: 500px;
     padding: 10px;
@@ -67,4 +80,10 @@ a:hover {
 
 .btn:active:focus {
     background-color: #166831;
+}
+
+.submit-btn {
+    background-color: #ECECEC;
+    border: 0 none;
+    border-radius: 24px;
 }
