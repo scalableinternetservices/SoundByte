@@ -1,8 +1,12 @@
 <div class="center jumbotron">
 </div>
 <div id="login_buttons">
-    <h><%= @user.email %></h>
-    <%= link_to "Sign up now", new_user_registration_path, class: "btn btn-primary btn-lg btn-xlarge signup_button" %>
-    <%= link_to "Login", new_user_session_path, class: "btn btn-primary btn-lg btn-xlarge" %>
-    <%= link_to "Logout", new_user_session_path, class: "btn btn-primary btn-lg btn-xlarge" %>
+    <% if user_signed_in? %>
+        <h><%= @user.email %></h>
+        <%= link_to "Logout", destroy_user_session_path, class: "btn btn-primary btn-lg btn-xlarge", :method => :delete %>
+    <% else %>
+        <%= link_to "Sign up now", new_user_registration_path, class: "btn btn-primary btn-lg btn-xlarge signup_button" %>
+        <%= link_to "Login", new_user_session_path, class: "btn btn-primary btn-lg btn-xlarge" %>
+    <% end %>
 </div>
+
