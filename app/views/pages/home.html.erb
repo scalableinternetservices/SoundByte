@@ -7,6 +7,8 @@
     <% if user_signed_in? %>
         <h><%= @user.email %></h>
 
+        <%= link_to "Upload SoundByte", new_sound_byte_path, class: "btn btn-primary btn-lg btn-xlarge", :method => :get %>
+        
         <%= link_to "Logout", destroy_user_session_path, class: "btn btn-primary btn-lg btn-xlarge", :method => :delete %>
     <% else %>
         <%= link_to "Sign up now", new_user_registration_path, class: "btn btn-primary btn-lg btn-xlarge signup_button" %>
