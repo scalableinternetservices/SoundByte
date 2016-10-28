@@ -1,0 +1,2 @@
+class SoundByteController < ApplicationController
+end
