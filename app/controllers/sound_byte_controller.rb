@@ -20,6 +20,6 @@ class SoundByteController < ApplicationController
     private
     
     def sound_byte_params
-        # params.require(:sound_byte).permit(:)
+        params.require(:sound_byte).permit(:mpeg)
     end
 end
