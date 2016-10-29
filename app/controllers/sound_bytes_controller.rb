@@ -16,6 +16,13 @@ class SoundBytesController < ApplicationController
             render 'new'
         end
     end
+    
+    def destroy
+      @sound_byte = SoundByte.find(params[:id])
+      @sound_byte.destroy
+      flash[:success] = "The soundbyte was destroyed."
+      redirect_to root_path
+    end
 
     private
     
