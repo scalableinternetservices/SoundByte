@@ -1,0 +1,12 @@
+<div class="page-header"><h1>Upload SoundByte</h1></div>
+
+<%= form_for @sound_byte do |f| %>
+  <%= render 'shared/errors', object: @sound_byte %>
+
+  <div class="form-group">
+    <%= f.label :mpeg %>
+    <%= f.file_field :mpeg, class: 'form-control'%>
+  </div>
+
+  <%= f.submit 'Upload', class: 'btn btn-primary' %>
+<% end %>
