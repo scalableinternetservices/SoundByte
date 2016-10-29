@@ -1,4 +1,4 @@
-class SoundByteController < ApplicationController
+class SoundBytesController < ApplicationController
     def index
         @sound_bytes = SoundByte.order('created_at')
     end
