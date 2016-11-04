@@ -10,8 +10,6 @@ Rails.application.routes.draw do
   
   get 'signup', to: 'pages#signup'
   get 'login', to: 'pages#login'
-  
-  get 'new', to: 'sound_bytes#new'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
