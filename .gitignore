@@ -10,4 +10,5 @@
 !/log/.keep
 /tmp
 
+public/system/*
 public/system/sound_bytes/*
