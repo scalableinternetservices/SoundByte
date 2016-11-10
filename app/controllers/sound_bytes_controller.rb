@@ -10,7 +10,7 @@ class SoundBytesController < ApplicationController
     def create
         @sound_byte = SoundByte.new(sound_byte_params)
         if @sound_byte.save
-            flash[:success] = "The photo was added!"
+            flash[:success] = "The soundbyte was added!"
             redirect_to root_path
         else
             render 'new'
