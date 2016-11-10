@@ -28,3 +28,7 @@ Things you may want to cover:
   * Before pushing your branch to origin, please merge `development` into your own branch and resolve any merge conflicts
   * Rerun `bin/rake db:migrate RAILS_ENV=development` to make sure everything works
   * Run the server and go to the homepage to make sure there is no critical errors
+
+* Resolving AWS rollback issue
+  * SSH into AWS EC2 instance with the .pem file
+  * Error logs can be found at `/var/log/cloud-init-output.log`
