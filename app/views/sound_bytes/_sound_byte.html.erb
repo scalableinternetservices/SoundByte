@@ -4,9 +4,10 @@
   <div class="media-body">
     <h4 class="media-heading"><%= sound_byte.mpeg_file_name %></h4>
     
+      <%= puts sound_byte.mpeg.hash_key %>
       <audio controls>
         <!--<source src="http://faulkner.lib.virginia.edu/static/audio/T106.mp3" type="audio/mpeg">-->
-        <source src='/system/8852ce290c165af91eccd983fd442310f7f3fdab.mp3' type="audio/mpeg">
+        <source src='/system/<%= sound_byte.mpeg.hash_key %>.mp3' type="audio/mpeg">
         Your browser does not support the audio element.
       </audio>
     
