@@ -32,3 +32,7 @@ Things you may want to cover:
 * Resolving AWS rollback issue
   * SSH into AWS EC2 instance with the .pem file
   * Error logs can be found at `/var/log/cloud-init-output.log`
+
+* Useful commands for database migration
+  * `bin/rake db:migrate:reset RAILS_ENV=development`: this is equivalent to running `db:drop`, `db:create`, and `db:migrate`
+  * After pulling from remote branch, always run `bin/rake db:migrate RAILS_ENV=development` to make sure your schema is up to date
