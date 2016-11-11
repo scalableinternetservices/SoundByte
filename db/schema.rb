@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161104204956) do
+ActiveRecord::Schema.define(version: 20161028221121) do
 
   create_table "sound_bytes", force: :cascade do |t|
     t.integer  "sb_id"
@@ -42,7 +42,11 @@ ActiveRecord::Schema.define(version: 20161104204956) do
     t.string   "last_name"
     t.datetime "created_at",                          null: false
     t.datetime "updated_at",                          null: false
+<<<<<<< HEAD
     t.string   "age"
+=======
+    t.integer  "age"
+>>>>>>> c30b3d053b3eab1aeb10d1ebd3914438b7771408
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true
