@@ -6,7 +6,6 @@
     
       <%= puts sound_byte.mpeg.hash_key %>
       <audio controls>
-        <!--<source src="http://faulkner.lib.virginia.edu/static/audio/T106.mp3" type="audio/mpeg">-->
         <source src='/system/<%= sound_byte.mpeg.hash_key %>.mp3' type="audio/mpeg">
         Your browser does not support the audio element.
       </audio>
