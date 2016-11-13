@@ -4,8 +4,7 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  resources :sound_bytes, only: [:new, :create, :index, :destroy]
-  get 'destroy', to: 'sound_bytes#_sound_byte'
+  resources :sound_bytes, only: [:new, :create, :index, :destroy, :update]
   
   root 'pages#home'
   

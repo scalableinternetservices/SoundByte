@@ -24,6 +24,15 @@ class SoundBytesController < ApplicationController
       flash[:success] = "The soundbyte was destroyed."
       redirect_to sound_bytes_path
     end
+    
+    # TODO
+    def update
+       @sound_byte = SoundByte.find(params[:id])
+       @sound_byte.update!(sound_byte_params)
+       flash[:success] = "The soundbyte title was changed."
+       redirect_to sound_byte_path
+    end
+    # /TODO
 
     private
     
