@@ -2,11 +2,11 @@
   <div class="media-left">
   </div>
   <div class="media-body">
-    <h4 class="media-heading"><%= sound_byte.mpeg_file_name %></h4>
+    <h4 class="media-heading"><%= sound_byte.mpeg_file_name %>
+      <%= link_to "Delete", sound_byte_path(sound_byte), class: "btn btn-primary btn-lg btn-xlarge", :method => :delete %>
+    </h4>
     
-      <%= puts sound_byte.mpeg.hash_key %>
       <audio controls>
-        <!--<source src="http://faulkner.lib.virginia.edu/static/audio/T106.mp3" type="audio/mpeg">-->
         <source src='/system/<%= sound_byte.mpeg.hash_key %>.mp3' type="audio/mpeg">
         Your browser does not support the audio element.
       </audio>
