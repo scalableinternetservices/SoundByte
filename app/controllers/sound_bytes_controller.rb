@@ -11,7 +11,8 @@ class SoundBytesController < ApplicationController
         @sound_byte = SoundByte.new(sound_byte_params)
         if @sound_byte.save
             flash[:success] = "The soundbyte was added!"
-            redirect_to root_path
+            # redirect_to root_path
+            redirect_to sound_bytes_path
         else
             render 'new'
         end
@@ -21,7 +22,7 @@ class SoundBytesController < ApplicationController
       @sound_byte = SoundByte.find(params[:id])
       @sound_byte.destroy
       flash[:success] = "The soundbyte was destroyed."
-      redirect_to root_path
+      redirect_to sound_bytes_path
     end
 
     private
