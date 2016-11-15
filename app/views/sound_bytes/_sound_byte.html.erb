@@ -11,9 +11,15 @@
       </audio>
       
       <!-- Options -->
-      <%= link_to "Edit", sound_byte_path(sound_byte.id), class: "btn btn-primary btn-lg btn-xlarge", :method => :put %>
-      <%= link_to "Share", sound_byte_path(sound_byte), class: "btn btn-primary btn-lg btn-xlarge", :method => :get %>
-      <%= link_to "Delete", sound_byte_path(sound_byte), class: "btn btn-primary btn-lg btn-xlarge", :method => :delete, data: {confirm: "Are you sure?"} %>
+      <%= @my_sound_bytes %>
+      <%= sound_byte %>
+      <%= @follower_sound_bytes %>
+      
+      <% if @my_sound_bytes %> <!-- If my soundbytes -->
+        <%= link_to "Edit", sound_byte_path(sound_byte.id), class: "btn btn-primary btn-lg btn-xlarge", :method => :put %>
+        <%= link_to "Share", sound_byte_path(sound_byte), class: "btn btn-primary btn-lg btn-xlarge", :method => :get %>
+        <%= link_to "Delete", sound_byte_path(sound_byte), class: "btn btn-primary btn-lg btn-xlarge", :method => :delete, data: {confirm: "Are you sure?"} %>
+      <% end %>
     
       <h5 class="media-heading">Tag: <%= sound_byte.tag %></h5>
       
@@ -23,22 +29,22 @@
       <!--<input type="tag" class="form-control" id="tag" placeholder="Enter tag">-->
       <!---->
       
-      <!---->
-      <!--<form class="form-horizontal">-->
-      <!--  <div class="form-group">-->
-      <!--    <label class="control-label col-sm-2" for=<%= sound_byte.tag %>>Tag:</label>-->
-      <!--    <div class="col-sm-10">-->
-      <!--      <input type=<%= sound_byte.tag %> class="form-control" id=<%= sound_byte.tag %> placeholder="Enter tag">-->
-      <!--    </div>-->
-      <!--  </div>-->
+      
+      <form class="form-horizontal">
+        <div class="form-group">
+          <label class="control-label col-sm-2" for=<%= sound_byte.tag %>>Tag:</label>
+          <div class="col-sm-10">
+            <input type=<%= sound_byte.tag %> class="form-control" id=<%= sound_byte.tag %> placeholder="Enter tag">
+          </div>
+        </div>
 
-      <!--  <div class="form-group"> -->
-      <!--    <div class="col-sm-offset-2 col-sm-10">-->
-      <!--      <button type="submit" class="btn btn-default">Submit</button>-->
-      <!--    </div>-->
-      <!--  </div>-->
-      <!--</form>-->
-      <!---->
+        <div class="form-group"> 
+          <div class="col-sm-offset-2 col-sm-10">
+            <button type="submit" class="btn btn-default">Submit</button>
+          </div>
+        </div>
+      </form>
+      
     
   </div>
 </div>

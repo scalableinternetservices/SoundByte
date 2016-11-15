@@ -2,7 +2,7 @@ class SoundBytesController < ApplicationController
     def index
         @my_sound_bytes = SoundByte.order('created_at')
         # TODO: Find a way to get follower sound bytes
-        @follower_sound_bytes = SoundByte.order('id')
+        @follower_sound_bytes = SoundByte.order('id').reverse_order # Prove that this is different
     end
     
     def new
