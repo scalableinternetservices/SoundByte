@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161028221121) do
+ActiveRecord::Schema.define(version: 20161113082439) do
 
   create_table "sound_bytes", force: :cascade do |t|
     t.integer  "sb_id"
@@ -23,6 +23,7 @@ ActiveRecord::Schema.define(version: 20161028221121) do
     t.string   "mpeg_content_type"
     t.integer  "mpeg_file_size"
     t.datetime "mpeg_updated_at"
+    t.string   "tag"
   end
 
   create_table "users", force: :cascade do |t|

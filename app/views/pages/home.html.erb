@@ -5,7 +5,8 @@
 </div>
 <div id="login_buttons">
     <% if user_signed_in? %>
-        <h><%= @user.email %></h>
+    
+        <h1>Welcome <%= @user.email %>!</h1><br>
 
         <%= link_to "My SoundBytes", sound_bytes_path, class: "btn btn-primary btn-lg btn-xlarge", :method => :get %>
         <%= link_to "Upload SoundByte", new_sound_byte_path, class: "btn btn-primary btn-lg btn-xlarge", :method => :get %>

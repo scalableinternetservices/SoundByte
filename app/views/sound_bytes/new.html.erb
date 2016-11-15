@@ -4,8 +4,20 @@
   <%= render 'shared/errors', object: @sound_byte %>
 
   <div class="form-group">
-    <%= f.label :mpeg %>
+    
+    <!-- Mpeg -->
+    <label class="form-control" for="mpeg">Mpeg</label>
     <%= f.file_field :mpeg, class: 'form-control'%>
+    
+    <!-- TODO: Add tags here -->
+    <% if f.file_field nil %>
+      
+      <!-- Optional tag -->
+      <label class="form-control" for="tag">Tag</label>
+      <!-- TODO: Fix this so it submits the tag! -->
+      <input type="tag" class="form-control" id="tag" placeholder="Enter tag">
+      
+    <% end %>
   </div>
 
   <%= f.submit 'Upload', class: 'btn btn-primary' %>
