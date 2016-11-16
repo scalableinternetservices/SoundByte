@@ -1,6 +1,7 @@
 class SoundBytesController < ApplicationController
     def index
         @my_sound_bytes = SoundByte.order('created_at')
+        @my_sound_bytes_ordered_by_title = SoundByte.order('mpeg_file_name')
         @my_sound_bytes_ordered_by_tag = SoundByte.order('tag')
         # TODO: Find a way to get follower sound bytes
         @follower_sound_bytes = SoundByte.order('tag') # Prove that this is different
