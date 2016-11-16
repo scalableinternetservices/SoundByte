@@ -19,9 +19,11 @@
         <%= link_to "Edit", sound_byte_path(sound_byte.id), class: "btn btn-primary btn-lg btn-xlarge", :method => :put %>
         <%= link_to "Share", sound_byte_path(sound_byte), class: "btn btn-primary btn-lg btn-xlarge", :method => :get %>
         <%= link_to "Delete", sound_byte_path(sound_byte), class: "btn btn-primary btn-lg btn-xlarge", :method => :delete, data: {confirm: "Are you sure?"} %>
-      <% end %>
+      <% end %> 
     
-      <h5 class="media-heading">Tag: <%= sound_byte.tag %></h5>
+      <!--New line for the display: inline; -->
+      <br> 
+      <h5 style="display: inline;" class="media-heading">Tag: <h4 style="display: inline;"><%= sound_byte.tag %></h4></h5>
       
       <!---->
       <!--<label class="form-control" for="tag">Tag</label>-->
