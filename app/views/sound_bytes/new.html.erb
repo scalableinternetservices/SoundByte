@@ -11,11 +11,9 @@
     
     <!-- TODO: Add tags here -->
     <% if f.file_field nil %>
-      
-      <!-- Optional tag -->
-      <label class="form-control" for="tag">Tag</label>
-      <!-- TODO: Fix this so it submits the tag! -->
-      <input type="tag" class="form-control" id="tag" placeholder="Enter tag">
+            
+      <%= f.label :tag %>
+      <%= f.text_field :tag %>
       
     <% end %>
   </div>
