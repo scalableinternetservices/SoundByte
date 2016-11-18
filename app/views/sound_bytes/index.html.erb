@@ -7,7 +7,7 @@
     <button onclick = "alert('Sort By Title');" class="btn btn-primary btn-lg btn-xlarge">Sort by Title</button>
     <button onclick = "sort_by_date_on(0);" class="btn btn-primary btn-lg btn-xlarge">Sort by Tag</button>
     
-    <div class="page-header"><h1>Soundbytes</h1></div>
+    <div class="page-header"><h1>My Soundbytes:</h1></div>
     <!-- Renders the code in _sound_byte.html.erb -->
     
     <% if 1 == 1 %>
@@ -27,7 +27,7 @@
     <button onclick = "alert('Sort By Title');" class="btn btn-primary btn-lg btn-xlarge">Sort by Title</button>
     <button onclick = "sort_by_date_on(0);" class="btn btn-primary btn-lg btn-xlarge">Sort by Tag</button>
     
-    <div class="page-header"><h1>Following:</h1></div>
+    <div class="page-header"><h1>Public Soundbytes:</h1></div>
     <!-- Renders the code in _sound_byte.html.erb -->
     <%= render @follower_sound_bytes %>
   </div>
