@@ -1,8 +1,11 @@
 class SoundBytesController < ApplicationController
     def index
         @my_sound_bytes = SoundByte.order('created_at')
+        @my_sound_bytes_ordered_by_title = SoundByte.order('mpeg_file_name')
+        @my_sound_bytes_ordered_by_tag = SoundByte.order('tag')
         # TODO: Find a way to get follower sound bytes
-        @follower_sound_bytes = SoundByte.order('id').reverse_order # Prove that this is different
+        @follower_sound_bytes = SoundByte.order('tag') # Prove that this is different
+        # @follower_sound_bytes = SoundByte.order('id').reverse_order # Prove that this is different
     end
     
     def new
@@ -39,6 +42,6 @@ class SoundBytesController < ApplicationController
     private
     
     def sound_byte_params
-        params.require(:sound_byte).permit(:mpeg)
+        params.require(:sound_byte).permit(:mpeg, :tag)
     end
 end
