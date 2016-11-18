@@ -1,4 +1,5 @@
 class SoundByte < ActiveRecord::Base
+    has_one :title
     has_attached_file :mpeg,
                     url: "/system/:hash.:extension",
                     hash_secret: "abc123"

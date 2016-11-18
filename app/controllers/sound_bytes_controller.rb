@@ -3,9 +3,15 @@ class SoundBytesController < ApplicationController
         @my_sound_bytes = SoundByte.where(user_id: current_user.id).order('created_at')
         @my_sound_bytes_ordered_by_title = SoundByte.where(user_id: current_user.id).order('mpeg_file_name')
         @my_sound_bytes_ordered_by_tag = SoundByte.where(user_id: current_user.id).order('tag')
-        # TODO: Find a way to get follower sound bytes
-        @follower_sound_bytes = SoundByte.order('tag') # Prove that this is different
-        # @follower_sound_bytes = SoundByte.order('id').reverse_order # Prove that this is different
+        if params[:byte_order] == 'date'
+            @sort_by = 'date'
+         elsif params[:byte_order] == 'title'
+            @sort_by = 'title'
+        elsif params[:byte_order] == 'tag'
+            @sort_by = 'tag'
+        else
+            @sort_by = 'date'
+        end
     end
     
     def new
