@@ -17,34 +17,6 @@ class SoundBytesController < ApplicationController
     def new
         @sound_byte = SoundByte.new
     end
-    
-    def show_by_date
-        render '@my_sound_bytes'
-    end
-    
-    def show_by_title
-        render '@my_sound_bytes_ordered_by_title'
-    end
-    
-    def show_by_tag
-        render '@my_sound_bytes_ordered_by_tag'
-    end
-    
-    def sound_byte
-        if params[:byte_order] == 'date'
-            puts "hello"
-    @my_sound_bytes = SoundByte.order('created_at')
-                render :index
-        elsif params[:byte_order] == 'title'
-            puts "does this get here"
-            render @my_sound_bytes_ordered_by_title
-        elsif params[:byte_order] == 'tag'
-            render @my_sound_bytes_ordered_by_tag
-        else
-            render @my_sound_bytes
-        end
-    end
-    
 
     def create
         @sound_byte = SoundByte.new(sound_byte_params)
