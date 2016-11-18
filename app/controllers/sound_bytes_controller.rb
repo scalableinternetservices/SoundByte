@@ -3,14 +3,26 @@ class SoundBytesController < ApplicationController
         @my_sound_bytes = SoundByte.where(user_id: current_user.id).order('created_at')
         @my_sound_bytes_ordered_by_title = SoundByte.where(user_id: current_user.id).order('mpeg_file_name')
         @my_sound_bytes_ordered_by_tag = SoundByte.where(user_id: current_user.id).order('tag')
-        if params[:byte_order] == 'date'
-            @sort_by = 'date'
-         elsif params[:byte_order] == 'title'
-            @sort_by = 'title'
-        elsif params[:byte_order] == 'tag'
-            @sort_by = 'tag'
+        @public_sound_bytes = SoundByte.order('created_at')
+        @public_sound_bytes_ordered_by_title = SoundByte.order('mpeg_file_name')
+        @public_sound_bytes_ordered_by_tag = SoundByte.order('tag')
+        if params[:my_order] == 'date'
+            @my_sort_by = 'date'
+         elsif params[:my_order] == 'title'
+            @my_sort_by = 'title'
+        elsif params[:my_order] == 'tag'
+            @my_sort_by = 'tag'
         else
-            @sort_by = 'date'
+            @my_sort_by = 'date'
+        end
+        if params[:public_order] == 'date'
+            @public_sort_by = 'date'
+         elsif params[:public_order] == 'title'
+            @public_sort_by = 'title'
+        elsif params[:public_order] == 'tag'
+            @public_sort_by = 'tag'
+        else
+            @public_sort_by = 'date'
         end
     end
     
