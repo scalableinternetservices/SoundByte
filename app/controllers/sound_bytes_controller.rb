@@ -7,6 +7,7 @@ class SoundBytesController < ApplicationController
         @public_sound_bytes = SoundByte.order('created_at')
         @public_sound_bytes_ordered_by_title = SoundByte.order('mpeg_file_name')
         @public_sound_bytes_ordered_by_tag = SoundByte.order('tag')
+        @public_sound_bytes_ordered_by_uploader = SoundByte.order('email')
         
         if params[:my_order] == 'date'
             @my_sort_by = 'date'
@@ -24,6 +25,8 @@ class SoundBytesController < ApplicationController
             @public_sort_by = 'title'
         elsif params[:public_order] == 'tag'
             @public_sort_by = 'tag'
+        elsif params[:public_order] == 'uploader'
+            @public_sort_by = 'uploader'
         else
             @public_sort_by = 'date'
         end
@@ -36,6 +39,7 @@ class SoundBytesController < ApplicationController
     def create
         @sound_byte = SoundByte.new(sound_byte_params)
         @sound_byte.user_id = current_user.id
+        @sound_byte.email = current_user.email
         
         if @sound_byte.save
             flash[:success] = "The soundbyte was added!"
