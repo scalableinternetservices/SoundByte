@@ -88,7 +88,7 @@
               <!-- [sample value] - authenticity_token: ... -->
               <!-- [sample value] - remember_me: 0 -->
               <request subst="true">
-                <http url="/users/sign_up" method="POST" version="1.1" 
+                <http url="/users/" method="POST" version="1.1" 
                   content_type="application/x-www-form-urlencoded"
                   contents="utf8=%E2%9C%93&amp;authenticity_token=%%_authenticity_token%%&amp;user%5Bemail%5D=user_%%_current_user_id%%%40test.com&amp;user%5Bpassword%5D=88888888&amp;user%5Bpassword_confirmation%5D=88888888&amp;commit=Create+Account"/>
               </request>
