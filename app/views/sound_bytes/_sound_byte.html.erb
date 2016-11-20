@@ -11,10 +11,7 @@
         Your browser does not support the audio element.
       </audio>
       
-      <h1>sound_byte.user_id: <%= sound_byte.user_id %></h1>
-      <h1>current_user.id: <%= current_user.id %></h1>
-      
-      <% if current_user.id == sound_byte.user_id %> 
+      <% if current_user.id.to_i == sound_byte.user_id.to_i %> 
         <%= link_to "Delete", sound_byte_path(sound_byte), class: "btn btn-primary btn-lg btn-xlarge", :method => :delete, data: {confirm: "Are you sure?"} %>
       <% end %> 
     
