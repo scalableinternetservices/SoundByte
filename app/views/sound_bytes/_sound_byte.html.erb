@@ -11,6 +11,7 @@
         Your browser does not support the audio element.
       </audio>
       
+      <!-- Only allow Delete if you created the SoundByte -->
       <% if current_user.id.to_i == sound_byte.user_id.to_i %> 
         <%= link_to "Delete", sound_byte_path(sound_byte), class: "btn btn-primary btn-lg btn-xlarge", :method => :delete, data: {confirm: "Are you sure?"} %>
       <% end %> 
@@ -18,6 +19,10 @@
       <!--New line for the display: inline; -->
       <br> 
       <h5 style="display: inline;" class="media-heading">Tag: <h4 style="display: inline;"><%= sound_byte.tag %></h4></h5>
+      <br>
+      <h5 style="display: inline;" class="media-heading">Uploaded by: <h4 style="display: inline;"><%= current_user.email %></h4></h5>
+      <br>
+      <h5 style="display: inline;" class="media-heading">Created at: <h4 style="display: inline;"><%= sound_byte.created_at %></h4></h5>
     
   </div>
 </div>
