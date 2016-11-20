@@ -3,9 +3,11 @@ class SoundBytesController < ApplicationController
         @my_sound_bytes = SoundByte.where(user_id: current_user.id).order('created_at')
         @my_sound_bytes_ordered_by_title = SoundByte.where(user_id: current_user.id).order('mpeg_file_name')
         @my_sound_bytes_ordered_by_tag = SoundByte.where(user_id: current_user.id).order('tag')
+        
         @public_sound_bytes = SoundByte.order('created_at')
         @public_sound_bytes_ordered_by_title = SoundByte.order('mpeg_file_name')
         @public_sound_bytes_ordered_by_tag = SoundByte.order('tag')
+        
         if params[:my_order] == 'date'
             @my_sort_by = 'date'
          elsif params[:my_order] == 'title'
@@ -15,6 +17,7 @@ class SoundBytesController < ApplicationController
         else
             @my_sort_by = 'date'
         end
+        
         if params[:public_order] == 'date'
             @public_sort_by = 'date'
          elsif params[:public_order] == 'title'
@@ -33,6 +36,7 @@ class SoundBytesController < ApplicationController
     def create
         @sound_byte = SoundByte.new(sound_byte_params)
         @sound_byte.user_id = current_user.id
+        
         if @sound_byte.save
             flash[:success] = "The soundbyte was added!"
             # redirect_to root_path
