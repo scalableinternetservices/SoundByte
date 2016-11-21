@@ -83,7 +83,7 @@
               <if var="authenticity_token" neq="">
         
               <!-- log in using username and password -->
-              <!-- [sample value] - email: user_1 -->
+               <!--[sample value] - email: user_1 -->
               <!-- [sample value] - password: 88888888 -->
               <!-- [sample value] - authenticity_token: ... -->
               <!-- [sample value] - remember_me: 0 -->
