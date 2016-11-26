@@ -11,7 +11,10 @@
 
   <!-- Server side setup -->
   <servers>
-    <server host="ec2-35-164-36-214.us-west-2.compute.amazonaws.com" port="80" type="tcp"></server>
+    <!--  c3-large  -->
+    <server host="ec2-35-162-87-63.us-west-2.compute.amazonaws.com" port="80" type="tcp"></server>
+    <!--  r3-large  -->
+    <server host="ec2-35-161-177-15.us-west-2.compute.amazonaws.com" port="80" type="tcp"></server>
   </servers>
 
   <load>
@@ -25,7 +28,7 @@
       <users arrivalrate="4" unit="second"></users>
     </arrivalphase>
 
-   <!-- <arrivalphase phase="4" duration="30" unit="second">
+   <arrivalphase phase="4" duration="30" unit="second">
      <users arrivalrate="8" unit="second"></users>
    </arrivalphase>
    <arrivalphase phase="5" duration="30" unit="second">
@@ -45,7 +48,7 @@
    </arrivalphase>
    <arrivalphase phase="10" duration="30" unit="second">
      <users arrivalrate="512" unit="second"></users>
-   </arrivalphase> -->
+   </arrivalphase>
 
   </load>
 

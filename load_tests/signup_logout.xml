@@ -11,7 +11,10 @@
 
   <!-- Server side setup -->
   <servers>
-    <server host="ec2-35-164-36-214.us-west-2.compute.amazonaws.com" port="80" type="tcp"></server>
+    <!--  c3-large  -->
+    <server host="ec2-35-162-87-63.us-west-2.compute.amazonaws.com" port="80" type="tcp"></server>
+    <!--  r3-large  -->
+    <server host="ec2-35-161-177-15.us-west-2.compute.amazonaws.com" port="80" type="tcp"></server>
   </servers>
   
   <load>
