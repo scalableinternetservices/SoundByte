@@ -126,7 +126,7 @@
 
           <thinktime value="2" random="true"></thinktime>
 
-
+            <!--
             <setdynvars sourcetype="eval" code='fun({Pid,DynVars})-> [[13, 10]] end.'>
               <var name="nl" />
             </setdynvars>
@@ -145,31 +145,41 @@
             
             <setdynvars sourcetype="random_number" start="1000" end="9999999">
               <var name="random_tag_name" />
-            </setdynvars>
+            </setdynvars>-->
+
+
+            
 
             <request subst="true">
               <http
                 url='/sound_bytes'
                 version='1.1'
                 method='POST'
-                content_type='multipart/form-data; boundary=----WebKitFormBoundary'
-                contents='------WebKitFormBoundary%%_nl%%Content-Disposition: form-data; name="utf8" ✓
-                ------WebKitFormBoundary%%_nl%%Content-Disposition: form-data; name="authenticity_token" %%_authentication_token%%
-                ------WebKitFormBoundary%%_nl%%Content-Disposition: form-data; name="sound_byte[mpeg]"; filename="%%_random_submission_name%%" Content-Type: audio/mp3
-                ------WebKitFormBoundary%%_nl%%Content-Disposition: form-data; name="sound_byte[tag]" %%_random_tag_name%%
-                ------WebKitFormBoundary%%_nl%%Content-Disposition: form-data; name="commit" Upload 
-                ------WebKitFormBoundary%%_nl%%--
+                content_type='multipart/form-data; boundary=----WebKitFormBoundary7ANAKWDJow2wB1cU'
+                contents='------WebKitFormBoundary7ANAKWDJow2wB1cU
+Content-Disposition: form-data; name="utf8"
+
+✓
+------WebKitFormBoundary7ANAKWDJow2wB1cU
+Content-Disposition: form-data; name="authenticity_token"
+
+XlJo6vPlJe05oQNrucoXoDA3QGOQ0oqQlYoi09dkLWSLW5SepqyA2Pqs/EeFGxlqd/bgSX7TTmkVaYMurIe8Qw==
+------WebKitFormBoundary7ANAKWDJow2wB1cU
+Content-Disposition: form-data; name="sound_byte[mpeg]"; filename="levelup.mp3"
+Content-Type: audio/mp3
+
+
+------WebKitFormBoundary7ANAKWDJow2wB1cU
+Content-Disposition: form-data; name="sound_byte[tag]"
+
+hi
+------WebKitFormBoundary7ANAKWDJow2wB1cU
+Content-Disposition: form-data; name="commit"
+
+Upload
+------WebKitFormBoundary7ANAKWDJow2wB1cU--
               '>
               </http>
-
-            <!--<http
-                url='/sound_bytes'
-                version='1.1'
-                method='POST'
-                content_type='multipart/form-data; boundary=----WebKitFormBoundary'
-                contents='------WebKitFormBoundary%%_nl%%Content-Disposition: form-data; name="utf8"%%_nl%%%%_nl%%%E2%9C%93%%_nl%%------WebKitFormBoundary%%_nl%%Content-Disposition: form-data; name="authenticity_token"%%_nl%%%%_nl%%%%_authentication_token%%%%_nl%%------WebKitFormBoundary%%_nl%%Content-Disposition: form-data; name="sound_byte[mpeg]"; filename="%%_random_submission_name%%"%%_nl%%Content-Type: audio/mp3%%_nl%%%%_nl%%%%_nl%%------WebKitFormBoundary%%_nl%%Content-Disposition: form-data; name="sound_byte[tag]"%%_nl%%%%_nl%%%%_random_tag_name%%%%_nl%%FormBoundary%%_nl%%Content-Disposition: form-data; name="commit"%%_nl%%%%_nl%%Upload%%_nl%%------WebKitFormBoundary--
-    '>
-            </http>-->
             </request>
     
 
