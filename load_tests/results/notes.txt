@@ -10,10 +10,29 @@ Do signup and logout 10 times for each user
 Testing visit homepage
 Instance: m3.medium
 Load tests: 3 phases (30 @ 1, 30 @ 2, 30 @ 4)
-Visit hoomepage 10 times for each user
+Visit homepage 10 times for each user
 
 ================20161120-2344===================
 Testing visit homepage
 Instance: m3.medium
 Load tests: 10 phases (30 @ 1, 30 @ 2, 30 @ 4, 30 @ 8, 30 @ 16, 30 @ 32, 30 @ 64, 30 @ 128, 30 @ 256, 30 @ 512)
-Visit hoomepage 10 times for each user
+Visit homepage 10 times for each user
+
+================20161126-2312===================
+Testing visit homepage
+Instance: c3.large
+Load tests: 10 phases (30 @ 1, 30 @ 2, 30 @ 4, 30 @ 8, 30 @ 16, 30 @ 32, 30 @ 64, 30 @ 128, 30 @ 256, 30 @ 512)
+Visit homepage 10 times for each user
+
+================20161126-2325===================
+Testing visit homepage
+Instance: r3.large
+Load tests: 10 phases (30 @ 1, 30 @ 2, 30 @ 4, 30 @ 8, 30 @ 16, 30 @ 32, 30 @ 64, 30 @ 128, 30 @ 256, 30 @ 512)
+Visit homepage 10 times for each user
+
+================20161126-2342===================
+Testing signup logout
+Instance: c3.large
+Load tests: 10 phases (30 @ 1, 30 @ 2, 30 @ 4, 30 @ 8, 30 @ 16, 30 @ 32, 30 @ 64, 30 @ 128, 30 @ 256, 30 @ 512)
+Do signup and logout 10 times for each user
+
