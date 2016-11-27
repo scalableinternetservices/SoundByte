@@ -17,3 +17,12 @@ Instance: m3.medium * 4 + db.m3.medium
 
 ================20161127-0642===================
 Instance: m3.medium * 8 + db.m3.medium
+
+================20161127-0700===================
+Instance: m3.xlarge * 2 + db.m3.medium
+
+================20161127-0701===================
+Instance: m3.xlarge * 4 + db.m3.medium
+
+================20161127-0711===================
+Instance: m3.xlarge * 8 + db.m3.medium

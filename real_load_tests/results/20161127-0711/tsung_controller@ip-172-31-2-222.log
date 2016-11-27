@@ -1,0 +1,172 @@
+
+=INFO REPORT==== 27-Nov-2016::07:11:17 ===
+    ts_config_server:(5:<0.55.0>) Config server started, logdir is "/home/ec2-user/.tsung/log/20161127-0711"
+ 
+=INFO REPORT==== 27-Nov-2016::07:11:17 ===
+              ts_mon:(5:<0.54.0>) starting monitor, global 
+
+=INFO REPORT==== 27-Nov-2016::07:11:17 ===
+           ts_config:(5:<0.55.0>) Reading config file: SoundByte/real_load_tests/critical.xml
+
+=INFO REPORT==== 27-Nov-2016::07:11:17 ===
+      ts_config_http:(4:<0.55.0>) Get user agent: 100 "Mozilla/5.0 (Windows; U; Windows NT 5.2; fr-FR; rv:1.7.8) Gecko/20050511 Firefox/1.0.4" 
+
+=INFO REPORT==== 27-Nov-2016::07:11:17 ===
+           ts_config:(5:<0.55.0>) Session name for id 1 is "critical"
+
+=INFO REPORT==== 27-Nov-2016::07:11:17 ===
+    ts_config_server:(4:<0.55.0>) SYSINFO:Tsung version: 1.6.0
+
+=INFO REPORT==== 27-Nov-2016::07:11:17 ===
+    ts_config_server:(4:<0.55.0>) SYSINFO:Erlang version: Erlang R14B04 (erts-5.8.5) [source] [64-bit] [rq:1] [async-threads:8] [kernel-poll:true]
+
+
+=INFO REPORT==== 27-Nov-2016::07:11:17 ===
+    ts_config_server:(4:<0.55.0>) SYSINFO:System architecture x86_64-redhat-linux-gnu
+
+=INFO REPORT==== 27-Nov-2016::07:11:17 ===
+    ts_config_server:(4:<0.55.0>) SYSINFO:Current path: /usr/lib/erlang/lib/tsung-1.6.0/ebin/tsung.beam
+
+=INFO REPORT==== 27-Nov-2016::07:11:17 ===
+              ts_mon:(5:<0.56.0>) Activate clients with text backend
+
+=INFO REPORT==== 27-Nov-2016::07:11:17 ===
+              ts_mon:(5:<0.56.0>) Starting tsung clients on hosts: [localhost]
+
+=INFO REPORT==== 27-Nov-2016::07:11:17 ===
+    ts_config_server:(5:<0.55.0>) Start a launcher on the controller beam localhost
+
+=INFO REPORT==== 27-Nov-2016::07:11:17 ===
+  ts_launcher_static:(5:<0.112.0>) Launch msg receive ("localhost")
+
+=INFO REPORT==== 27-Nov-2016::07:11:17 ===
+         ts_launcher:(5:<0.113.0>) Launch msg receive ("localhost")
+
+=INFO REPORT==== 27-Nov-2016::07:11:17 ===
+    ts_config_server:(5:<0.55.0>) All remote beams started, syncing 
+
+=INFO REPORT==== 27-Nov-2016::07:11:17 ===
+    ts_config_server:(5:<0.55.0>) Undefined ports_range config 
+
+=INFO REPORT==== 27-Nov-2016::07:11:17 ===
+    ts_config_server:(5:<0.55.0>) New arrival phase 1 for client "localhost" (last ? true): will start 30 users
+
+=INFO REPORT==== 27-Nov-2016::07:11:17 ===
+    ts_config_server:(5:<0.55.0>) New arrival phase 2 for client "localhost" (last ? true): will start 60 users
+
+=INFO REPORT==== 27-Nov-2016::07:11:17 ===
+    ts_config_server:(5:<0.55.0>) New arrival phase 3 for client "localhost" (last ? true): will start 120 users
+
+=INFO REPORT==== 27-Nov-2016::07:11:17 ===
+    ts_config_server:(5:<0.55.0>) New arrival phase 4 for client "localhost" (last ? true): will start 240 users
+
+=INFO REPORT==== 27-Nov-2016::07:11:17 ===
+    ts_config_server:(5:<0.55.0>) New arrival phase 5 for client "localhost" (last ? true): will start 480 users
+
+=INFO REPORT==== 27-Nov-2016::07:11:17 ===
+    ts_config_server:(5:<0.55.0>) New arrival phase 6 for client "localhost" (last ? true): will start 960 users
+
+=INFO REPORT==== 27-Nov-2016::07:11:17 ===
+    ts_config_server:(5:<0.55.0>) New arrival phase 7 for client "localhost" (last ? true): will start 1920 users
+
+=INFO REPORT==== 27-Nov-2016::07:11:17 ===
+    ts_config_server:(5:<0.55.0>) New arrival phase 8 for client "localhost" (last ? true): will start 3840 users
+
+=INFO REPORT==== 27-Nov-2016::07:11:17 ===
+    ts_config_server:(5:<0.55.0>) New arrival phase 9 for client "localhost" (last ? true): will start 7680 users
+
+=INFO REPORT==== 27-Nov-2016::07:11:17 ===
+    ts_config_server:(5:<0.55.0>) New arrival phase 10 for client "localhost" (last ? true): will start 15360 users
+
+=INFO REPORT==== 27-Nov-2016::07:11:17 ===
+         ts_launcher:(5:<0.113.0>) Expected duration of first phase: 30.0 sec (30 users) 
+
+=INFO REPORT==== 27-Nov-2016::07:11:18 ===
+         ts_launcher:(5:<0.113.0>) Activate launcher (30 users) in 791 msec 
+
+=INFO REPORT==== 27-Nov-2016::07:11:45 ===
+         ts_launcher:(4:<0.113.0>) Need to wait 2.912 sec before changing phase, going to sleep
+
+=INFO REPORT==== 27-Nov-2016::07:11:48 ===
+         ts_launcher:(5:<0.113.0>) Waking up
+
+=INFO REPORT==== 27-Nov-2016::07:11:48 ===
+         ts_launcher:(5:<0.113.0>) Start a new arrival phase (60 users, 0.002); expected duration=30.0 sec
+
+=INFO REPORT==== 27-Nov-2016::07:12:15 ===
+         ts_launcher:(4:<0.113.0>) Need to wait 2.762 sec before changing phase, going to sleep
+
+=INFO REPORT==== 27-Nov-2016::07:12:18 ===
+         ts_launcher:(5:<0.113.0>) Waking up
+
+=INFO REPORT==== 27-Nov-2016::07:12:18 ===
+         ts_launcher:(5:<0.113.0>) Start a new arrival phase (120 users, 0.004); expected duration=30.0 sec
+
+=INFO REPORT==== 27-Nov-2016::07:12:48 ===
+         ts_launcher:(5:<0.113.0>) Phase duration exceeded, but not all users were launched (1 users, 0.8% of phase)
+
+=INFO REPORT==== 27-Nov-2016::07:12:48 ===
+         ts_launcher:(5:<0.113.0>) Start a new arrival phase (240 users, 0.008); expected duration=30.0 sec
+
+=INFO REPORT==== 27-Nov-2016::07:13:18 ===
+         ts_launcher:(4:<0.113.0>) Need to wait 0.167 sec before changing phase, going to sleep
+
+=INFO REPORT==== 27-Nov-2016::07:13:18 ===
+         ts_launcher:(5:<0.113.0>) Waking up
+
+=INFO REPORT==== 27-Nov-2016::07:13:18 ===
+         ts_launcher:(5:<0.113.0>) Start a new arrival phase (480 users, 0.016); expected duration=30.0 sec
+
+=INFO REPORT==== 27-Nov-2016::07:13:47 ===
+         ts_launcher:(4:<0.113.0>) Need to wait 0.528 sec before changing phase, going to sleep
+
+=INFO REPORT==== 27-Nov-2016::07:13:48 ===
+         ts_launcher:(5:<0.113.0>) Waking up
+
+=INFO REPORT==== 27-Nov-2016::07:13:48 ===
+         ts_launcher:(5:<0.113.0>) Start a new arrival phase (960 users, 0.032); expected duration=30.0 sec
+
+=INFO REPORT==== 27-Nov-2016::07:14:18 ===
+         ts_launcher:(5:<0.113.0>) Phase duration exceeded, but not all users were launched (61 users, 6.4% of phase)
+
+=INFO REPORT==== 27-Nov-2016::07:14:18 ===
+         ts_launcher:(5:<0.113.0>) Start a new arrival phase (1920 users, 0.064); expected duration=30.0 sec
+
+=INFO REPORT==== 27-Nov-2016::07:14:48 ===
+         ts_launcher:(4:<0.113.0>) Phase duration exceeded, more than 20% (41.9%) of users were not launched in time (804 users), tsung may be overloaded !
+
+=INFO REPORT==== 27-Nov-2016::07:14:48 ===
+         ts_launcher:(5:<0.113.0>) Start a new arrival phase (3840 users, 0.128); expected duration=30.0 sec
+
+=INFO REPORT==== 27-Nov-2016::07:15:17 ===
+    alarm_handler: {set,{system_memory_high_watermark,[]}}
+
+=INFO REPORT==== 27-Nov-2016::07:15:18 ===
+         ts_launcher:(4:<0.113.0>) Phase duration exceeded, more than 20% (70.9%) of users were not launched in time (2722 users), tsung may be overloaded !
+
+=INFO REPORT==== 27-Nov-2016::07:15:18 ===
+         ts_launcher:(5:<0.113.0>) Start a new arrival phase (7680 users, 0.256); expected duration=30.0 sec
+
+=INFO REPORT==== 27-Nov-2016::07:15:48 ===
+         ts_launcher:(4:<0.113.0>) Phase duration exceeded, more than 20% (85.2%) of users were not launched in time (6543 users), tsung may be overloaded !
+
+=INFO REPORT==== 27-Nov-2016::07:15:48 ===
+         ts_launcher:(5:<0.113.0>) Start a new arrival phase (15360 users, 0.512); expected duration=30.0 sec
+
+=INFO REPORT==== 27-Nov-2016::07:16:18 ===
+         ts_launcher:(4:<0.113.0>) Phase duration exceeded, more than 20% (92.8%) of users were not launched in time (14253 users), tsung may be overloaded !
+
+=INFO REPORT==== 27-Nov-2016::07:16:18 ===
+         ts_launcher:(5:<0.113.0>) This was the last phase, wait for connected users to finish their session
+
+=INFO REPORT==== 27-Nov-2016::07:16:18 ===
+     ts_launcher_mgr:(5:<0.107.0>) Still 2459 active client(s)
+
+=INFO REPORT==== 27-Nov-2016::07:17:18 ===
+    alarm_handler: {clear,system_memory_high_watermark}
+
+=INFO REPORT==== 27-Nov-2016::07:17:33 ===
+     ts_launcher_mgr:(5:<0.107.0>) No more active users 'tsung_controller@ip-172-31-2-222' "3773"
+
+=INFO REPORT==== 27-Nov-2016::07:17:34 ===
+              ts_mon:(5:<0.56.0>) stopping monitor (normal)
