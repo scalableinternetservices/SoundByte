@@ -120,7 +120,7 @@
 
           <!-- 3. upload -->
           <request>
-            <dyn_variable name="authenticity_token" ></dyn_variable> 
+            <!--<dyn_variable name="authenticity_token" ></dyn_variable>--> 
             <http url="/sound_bytes/new" version="1.1" method="GET"></http>
           </request>
 
