@@ -12,15 +12,15 @@
   <!-- Server side setup -->
   <servers>
     <!-- m3-medium -->
-    <server host="ec2-35-164-16-108.us-west-2.compute.amazonaws.com" port="80" type="tcp"></server>
+    <server host="ec2-35-162-217-91.us-west-2.compute.amazonaws.com" port="80" type="tcp"></server>
     <!--  c3-large  -->
-    <server host="ec2-35-162-87-63.us-west-2.compute.amazonaws.com" port="80" type="tcp"></server>
+    <server host="ec2-35-164-73-147.us-west-2.compute.amazonaws.com" port="80" type="tcp"></server>
     <!--  r3-large  -->
-    <server host="ec2-35-161-177-15.us-west-2.compute.amazonaws.com" port="80" type="tcp"></server>
+    <server host="ec2-35-164-29-55.us-west-2.compute.amazonaws.com" port="80" type="tcp"></server>
     <!-- horizontal m3-medium *2-->
-    <server host="Soundbyte-h-m3-m-2-571749252.us-west-2.elb.amazonaws.com" port="80" type="tcp"></server>
+    <!--<server host="Soundbyte-h-m3-m-2-571749252.us-west-2.elb.amazonaws.com" port="80" type="tcp"></server>--
     <!-- horizontal m3-medium *4-->
-    <server host="SoundByte-h-m3-m-4-122781054.us-west-2.elb.amazonaws.com" port="80" type="tcp"></server>
+    <!--<server host="SoundByte-h-m3-m-4-122781054.us-west-2.elb.amazonaws.com" port="80" type="tcp"></server>-->
   </servers>
 
   <load>

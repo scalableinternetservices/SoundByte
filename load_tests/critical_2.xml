@@ -12,15 +12,15 @@
   <!-- Server side setup -->
   <servers>
     <!-- m3-medium -->
-    <server host="ec2-35-164-16-108.us-west-2.compute.amazonaws.com" port="80" type="tcp"></server>
+    <server host="ec2-35-162-217-91.us-west-2.compute.amazonaws.com" port="80" type="tcp"></server>
     <!--  c3-large  -->
-    <server host="ec2-35-162-87-63.us-west-2.compute.amazonaws.com" port="80" type="tcp"></server>
+    <server host="ec2-35-164-73-147.us-west-2.compute.amazonaws.com" port="80" type="tcp"></server>
     <!--  r3-large  -->
-    <server host="ec2-35-161-177-15.us-west-2.compute.amazonaws.com" port="80" type="tcp"></server>
+    <server host="ec2-35-164-29-55.us-west-2.compute.amazonaws.com" port="80" type="tcp"></server>
     <!-- horizontal m3-medium *2-->
-    <server host="Soundbyte-h-m3-m-2-571749252.us-west-2.elb.amazonaws.com" port="80" type="tcp"></server>
+    <!--<server host="Soundbyte-h-m3-m-2-571749252.us-west-2.elb.amazonaws.com" port="80" type="tcp"></server>--
     <!-- horizontal m3-medium *4-->
-    <server host="SoundByte-h-m3-m-4-122781054.us-west-2.elb.amazonaws.com" port="80" type="tcp"></server>
+    <!--<server host="SoundByte-h-m3-m-4-122781054.us-west-2.elb.amazonaws.com" port="80" type="tcp"></server>-->
   </servers>
 
   <load>
@@ -74,7 +74,7 @@
 
   <sessions>
 
-    <session name="critical" probability="100" type="ts_http">
+    <session name="critical_2" probability="100" type="ts_http">
       <setdynvars sourcetype="random_number" start="1" end="100000">
         <var name="current_user_id" />
       </setdynvars>
@@ -118,6 +118,13 @@
 
 
           <!-- 3. upload -->
+          <request>
+            <dyn_variable name="authenticity_token" ></dyn_variable> 
+            <http url="/sound_bytes/new" version="1.1" method="GET"></http>
+          </request>
+
+          <thinktime value="2" random="true"></thinktime>
+
           <setdynvars sourcetype="eval" code='fun({Pid,DynVars})-> [[13, 10]] end.'>
             <var name="nl" />
           </setdynvars>
