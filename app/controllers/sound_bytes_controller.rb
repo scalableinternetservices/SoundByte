@@ -38,7 +38,7 @@ class SoundBytesController < ApplicationController
 
     def create
         @sound_byte = SoundByte.new(sound_byte_params)
-        #@sound_byte.user_id = current_user.id
+        @sound_byte.user_id = current_user.id
         @sound_byte.email = current_user.email
         
         if @sound_byte.save
