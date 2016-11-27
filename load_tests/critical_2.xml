@@ -24,7 +24,7 @@
   </servers>
 
   <load>
-    <arrivalphase phase="1" duration="30" unit="second">
+    <arrivalphase phase="1" duration="10" unit="second">
       <users arrivalrate="1" unit="second"></users>
     </arrivalphase>
     <!--
@@ -154,7 +154,7 @@
             version='1.1'
             method='POST'
             content_type='multipart/form-data; boundary=----FormBoundary'
-            contents='------FormBoundary%%_nl%%Content-Disposition: form-data; name=utf8%%_nl%%%%_nl%%%E2%9C%93%%_nl%%-------FormBounday%%_nl%%Content-Disposition: form-data; name="authenticity_token"%%_nl%%%%_nl%%%%_authentication_token%%%%_nl%%------FormBoundary%%_nl%%Content-Disposition: form-data; name="sound_byte[mpeg]"; filename="%%_random_submission_name%%"%%_nl%%Content-Type: audio/mp3%%_nl%%%%_nl%%%%_attached_file%%%%_nl%%------FormBoundary%%_nl%%Content-Disposition: form-data; name="sound_byte[tag]"%%_nl%%%%_nl%%%%_random_tag_name%%%%_nl%%FormBoundary%%_nl%%Content-Disposition: form-data; name="commit"%%_nl%%%%_nl%%Upload%%_nl%%------FormBoundary--
+            contents='-------FormBounday%%_nl%%Content-Disposition: form-data; name="authenticity_token"%%_authentication_token%%%%_nl%%------FormBoundary%%_nl%%Content-Disposition: form-data; name="sound_byte[mpeg]"; filename="%%_random_submission_name%%"%%_nl%%Content-Type: audio/mp3%%_nl%%%%_nl%%%%_attached_file%%%%_nl%%------FormBoundary%%_nl%%Content-Disposition: form-data; name="sound_byte[tag]"%%_nl%%%%_nl%%%%_random_tag_name%%%%_nl%%FormBoundary%%_nl%%Content-Disposition: form-data; name="commit"%%_nl%%%%_nl%%Upload%%_nl%%------FormBoundary--
   '>
         </http>
         </request>
