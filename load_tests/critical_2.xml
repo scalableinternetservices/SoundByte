@@ -27,12 +27,13 @@
     <arrivalphase phase="1" duration="30" unit="second">
       <users arrivalrate="1" unit="second"></users>
     </arrivalphase>
+    <!--
     <arrivalphase phase="2" duration="30" unit="second">
       <users arrivalrate="2" unit="second"></users>
     </arrivalphase>
     <arrivalphase phase="3" duration="30" unit="second">
       <users arrivalrate="4" unit="second"></users>
-    </arrivalphase>
+    </arrivalphase>-->
 
   <!--
    <arrivalphase phase="4" duration="30" unit="second">
@@ -125,38 +126,40 @@
 
           <thinktime value="2" random="true"></thinktime>
 
-          <setdynvars sourcetype="eval" code='fun({Pid,DynVars})-> [[13, 10]] end.'>
-            <var name="nl" />
-          </setdynvars>
+          <if var="authenticity_token" neq="">
 
-          <setdynvars sourcetype="eval"
-              code='fun({Pid,DynVars})->
-                      {ok, Bin} = file:read_file("levelup.mp3"),
-                      Bin
-                      end.'>
-          <var name="attached_file" />
-          </setdynvars>
+            <setdynvars sourcetype="eval" code='fun({Pid,DynVars})-> [[13, 10]] end.'>
+              <var name="nl" />
+            </setdynvars>
 
-          <setdynvars sourcetype="random_number" start="1000" end="9999999">
-          <var name="random_submission_name" />
-          </setdynvars>
-          
-          <setdynvars sourcetype="random_number" start="1000" end="9999999">
-          <var name="random_tag_name" />
-          </setdynvars>
+            <setdynvars sourcetype="eval"
+                code='fun({Pid,DynVars})->
+                        {ok, Bin} = file:read_file("levelup.mp3"),
+                        Bin
+                        end.'>
+            <var name="attached_file" />
+            </setdynvars>
 
-          <request subst="true">
-          <http
-              url='/sound_bytes'
-              version='1.1'
-              method='POST'
-              content_type='multipart/form-data; boundary=----WebKitFormBoundary'
-              contents='------WebKitFormBoundary%%_nl%%Content-Disposition: form-data; name="utf8"%%_nl%%%%_nl%%%E2%9C%93%%_nl%%------WebKitFormBoundary%%_nl%%Content-Disposition: form-data; name="authenticity_token"%%_nl%%%%_nl%%%%_authentication_token%%%%_nl%%------WebKitFormBoundary%%_nl%%Content-Disposition: form-data; name="sound_byte[mpeg]"; filename="%%_random_submission_name%%"%%_nl%%Content-Type: audio/mp3%%_nl%%%%_nl%%%%_nl%%------WebKitFormBoundary%%_nl%%Content-Disposition: form-data; name="sound_byte[tag]"%%_nl%%%%_nl%%%%_random_tag_name%%%%_nl%%FormBoundary%%_nl%%Content-Disposition: form-data; name="commit"%%_nl%%%%_nl%%Upload%%_nl%%------WebKitFormBoundary--
-  '>
-          </http>
-          </request>
+            <setdynvars sourcetype="random_number" start="1000" end="9999999">
+            <var name="random_submission_name" />
+            </setdynvars>
+            
+            <setdynvars sourcetype="random_number" start="1000" end="9999999">
+            <var name="random_tag_name" />
+            </setdynvars>
+
+            <request subst="true">
+            <http
+                url='/sound_bytes'
+                version='1.1'
+                method='POST'
+                content_type='multipart/form-data; boundary=----WebKitFormBoundary'
+                contents='------WebKitFormBoundary%%_nl%%Content-Disposition: form-data; name="utf8"%%_nl%%%%_nl%%%E2%9C%93%%_nl%%------WebKitFormBoundary%%_nl%%Content-Disposition: form-data; name="authenticity_token"%%_nl%%%%_nl%%%%_authentication_token%%%%_nl%%------WebKitFormBoundary%%_nl%%Content-Disposition: form-data; name="sound_byte[mpeg]"; filename="%%_random_submission_name%%"%%_nl%%Content-Type: audio/mp3%%_nl%%%%_nl%%%%_nl%%------WebKitFormBoundary%%_nl%%Content-Disposition: form-data; name="sound_byte[tag]"%%_nl%%%%_nl%%%%_random_tag_name%%%%_nl%%FormBoundary%%_nl%%Content-Disposition: form-data; name="commit"%%_nl%%%%_nl%%Upload%%_nl%%------WebKitFormBoundary--
+    '>
+            </http>
+            </request>
     
-
+          </if>
 
 
 
