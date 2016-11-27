@@ -16,9 +16,11 @@
     <!--  r3-large  -->
     <server host="ec2-35-164-29-55.us-west-2.compute.amazonaws.com" port="80" type="tcp"></server>
     <!-- horizontal m3-medium *2-->
-    <!--<server host="Soundbyte-h-m3-m-2-571749252.us-west-2.elb.amazonaws.com" port="80" type="tcp"></server>-->
+    <server host="SoundByte-h-m3-m-2-1141598721.us-west-2.elb.amazonaws.com" port="80" type="tcp"></server>
     <!-- horizontal m3-medium *4-->
-    <!--<server host="SoundByte-h-m3-m-4-122781054.us-west-2.elb.amazonaws.com" port="80" type="tcp"></server>-->
+    <server host="SoundByte-h-m3-m-4-220956625.us-west-2.elb.amazonaws.com" port="80" type="tcp"></server>
+    <!-- horizontal m3-medium *8-->
+    <server host="SoundByte-h-m3-m-8-2079182349.us-west-2.elb.amazonaws.com" port="80" type="tcp"></server>
   </servers>
 
   <load>
