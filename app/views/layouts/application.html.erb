@@ -1,25 +1,27 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Soundbyte</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <!--responsive favicons -->
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
-  <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
-  <link rel="manifest" href="/manifest.json">
-  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-  <meta name="theme-color" content="#ffffff">
-  <%= csrf_meta_tags %>
-</head>
-<body>
-  <a href="/"><div id="logo">
-    <h1 style="text-align: center">Soundbyte</h1>
-    <%=image_tag("logo.png", alt: "Example Image", width: "50px")%>
-  </div></a>
-
-<%= yield %>
-
-</body>
-</html>
+<% cache do %>
+  <!DOCTYPE html>
+  <html>
+  <head>
+    <title>Soundbyte</title>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <!--responsive favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+    <a href="/"><div id="logo">
+      <h1 style="text-align: center">Soundbyte</h1>
+      <%=image_tag("logo.png", alt: "Example Image", width: "50px")%>
+    </div></a>
+  
+  <%= yield %>
+  
+  </body>
+  </html>
+<% end %>

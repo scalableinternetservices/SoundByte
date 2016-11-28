@@ -1,52 +1,59 @@
-<div class="modal-body row">
-  
-  <div class="col-md-6">
+<% cache(cache_key_for_soundbytes_page) do %>
+  <div class="modal-body row">
     
-    <!-- Buttons to change sorting options -->
-    <%= link_to "Sort By Date", sound_bytes_path(:my_order => 'date'), class: "btn btn-primary btn-lg btn-xlarge" %>
-    <%= link_to "Sort By Title", sound_bytes_path(:my_order => 'title'), class: "btn btn-primary btn-lg btn-xlarge" %>
-    <%= link_to "Sort By Tag", sound_bytes_path(:my_order => 'tag'), class: "btn btn-primary btn-lg btn-xlarge" %>
+    <div class="col-md-6">
+      
+      <!-- Buttons to change sorting options -->
+      <%= link_to "Sort By Date", sound_bytes_path(:my_order => 'date'), class: "btn btn-primary btn-lg btn-xlarge" %>
+      <%= link_to "Sort By Title", sound_bytes_path(:my_order => 'title'), class: "btn btn-primary btn-lg btn-xlarge" %>
+      <%= link_to "Sort By Tag", sound_bytes_path(:my_order => 'tag'), class: "btn btn-primary btn-lg btn-xlarge" %>
+      
+      <div class="page-header"><h1>My Soundbytes:</h1></div>
+      <!-- Renders the code in _sound_byte.html.erb -->
+      
+      <% cache(cache_key_for_my_soundbytes) do %>
+        <div id="my_bytes">
+        <% if @my_sort_by == 'date' %>
+          <%= render @my_sound_bytes %>
+        <% elsif @my_sort_by == 'title' %>
+          <%= render @my_sound_bytes_ordered_by_title %>
+        <% elsif @my_sort_by == 'tag' %>
+          <%= render @my_sound_bytes_ordered_by_tag %>
+        <% else %>
+          <%= render @my_sound_bytes %>
+        <% end %>
     
-    <div class="page-header"><h1>My Soundbytes:</h1></div>
-    <!-- Renders the code in _sound_byte.html.erb -->
-    
-    <div id="my_bytes">
-    <% if @my_sort_by == 'date' %>
-      <%= render @my_sound_bytes %>
-    <% elsif @my_sort_by == 'title' %>
-      <%= render @my_sound_bytes_ordered_by_title %>
-    <% elsif @my_sort_by == 'tag' %>
-      <%= render @my_sound_bytes_ordered_by_tag %>
-    <% else %>
-      <%= render @my_sound_bytes %>
-    <% end %>
-
-    </div>
-  
-  </div>
-  
-  <div class="col-md-6">
-    
-    <!-- Buttons to change sorting options -->
-    <%= link_to "Sort By Date", sound_bytes_path(:public_order => 'date'), class: "btn btn-primary btn-lg btn-xlarge" %>
-    <%= link_to "Sort By Title", sound_bytes_path(:public_order => 'title'), class: "btn btn-primary btn-lg btn-xlarge" %>
-    <%= link_to "Sort By Tag", sound_bytes_path(:public_order => 'tag'), class: "btn btn-primary btn-lg btn-xlarge" %>
-    <%= link_to "Sort By Uploader", sound_bytes_path(:public_order => 'uploader'), class: "btn btn-primary btn-lg btn-xlarge" %>
-    
-    <div class="page-header"><h1>Public Soundbytes:</h1></div>
-    <!-- Renders the code in _sound_byte.html.erb -->
-    <div id="my_bytes">
-      <% if @public_sort_by == 'date' %>
-        <%= render @public_sound_bytes %>
-      <% elsif @public_sort_by == 'title' %>
-        <%= render @public_sound_bytes_ordered_by_title %>
-      <% elsif @public_sort_by == 'tag' %>
-        <%= render @public_sound_bytes_ordered_by_tag %>
-      <% elsif @public_sort_by == 'uploader' %>
-        <%= render @public_sound_bytes_ordered_by_uploader %>
-      <% else %>
-        <%= render @public_sound_bytes %>
+        </div>
       <% end %>
     </div>
+    
+    <div class="col-md-6">
+      
+      <!-- Buttons to change sorting options -->
+      <%= link_to "Sort By Date", sound_bytes_path(:public_order => 'date'), class: "btn btn-primary btn-lg btn-xlarge" %>
+      <%= link_to "Sort By Title", sound_bytes_path(:public_order => 'title'), class: "btn btn-primary btn-lg btn-xlarge" %>
+      <%= link_to "Sort By Tag", sound_bytes_path(:public_order => 'tag'), class: "btn btn-primary btn-lg btn-xlarge" %>
+      <%= link_to "Sort By Uploader", sound_bytes_path(:public_order => 'uploader'), class: "btn btn-primary btn-lg btn-xlarge" %>
+      
+      <div class="page-header"><h1>Public Soundbytes:</h1></div>
+      <!-- Renders the code in _sound_byte.html.erb -->
+      
+      <% cache(cache_key_for_all_soundbytes) do %>
+        <div id="my_bytes">
+          <% if @public_sort_by == 'date' %>
+            <%= render @public_sound_bytes %>
+          <% elsif @public_sort_by == 'title' %>
+            <%= render @public_sound_bytes_ordered_by_title %>
+          <% elsif @public_sort_by == 'tag' %>
+            <%= render @public_sound_bytes_ordered_by_tag %>
+          <% elsif @public_sort_by == 'uploader' %>
+            <%= render @public_sound_bytes_ordered_by_uploader %>
+          <% else %>
+            <%= render @public_sound_bytes %>
+          <% end %>
+        </div>
+      <% end %>
+      
+    </div>
   </div>
-</div>
+<% end %>
