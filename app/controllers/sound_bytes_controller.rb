@@ -33,7 +33,7 @@ class SoundBytesController < ApplicationController
     end
     
     def new
-        @sound_byte = SoundByte.new
+        @sound_byte = SoundByte.new if stale?(current_user.id)
     end
 
     def create
