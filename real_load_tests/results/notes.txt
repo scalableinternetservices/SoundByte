@@ -26,3 +26,9 @@ Instance: m3.xlarge * 4 + db.m3.medium
 
 ================20161127-0711===================
 Instance: m3.xlarge * 8 + db.m3.medium
+
+================20161128-0217===================
+Instance: m3.medium + CSC
+
+================20161128-0229===================
+Instance: m3.large + CSC
