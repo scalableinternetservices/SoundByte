@@ -11,13 +11,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161120190339) do
+ActiveRecord::Schema.define(version: 20161201054000) do
 
   create_table "sound_bytes", force: :cascade do |t|
     t.integer  "sb_id"
     t.string   "mp3_file"
     t.string   "user_id"
-    t.string   "title"
     t.datetime "created_at",        null: false
     t.datetime "updated_at",        null: false
     t.string   "mpeg_file_name"
@@ -27,6 +26,9 @@ ActiveRecord::Schema.define(version: 20161120190339) do
     t.string   "tag"
     t.string   "email"
   end
+
+  add_index "sound_bytes", ["created_at", "mpeg_file_name"], name: "index_sound_bytes_on_created_at_and_mpeg_file_name"
+  add_index "sound_bytes", ["tag", "email"], name: "index_sound_bytes_on_tag_and_email"
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
